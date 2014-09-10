@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="artistLabel" destination="sh0-yq-ckQ" id="Teh-i7-ChY"/>
+                <outlet property="largeImageView" destination="7wy-yU-bqq" id="5g1-nT-kxO"/>
+                <outlet property="summaryTextView" destination="ZBS-7S-wIx" id="GhI-fB-yfe"/>
+                <outlet property="titleLabel" destination="VtS-8E-wcw" id="yrh-dD-Kzy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="gAW-wz-27p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wy-yU-bqq">
+                    <rect key="frame" x="25" y="75" width="387" height="400"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="318" translatesAutoresizingMaskIntoConstraints="NO" id="sh0-yq-ckQ">
+                    <rect key="frame" x="435" y="75" width="318" height="142"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBS-7S-wIx">
+                    <rect key="frame" x="25" y="503" width="723" height="506"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="318" translatesAutoresizingMaskIntoConstraints="NO" id="VtS-8E-wcw">
+                    <rect key="frame" x="430" y="326" width="318" height="142"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZBS-7S-wIx" firstAttribute="top" secondItem="VtS-8E-wcw" secondAttribute="bottom" constant="35" id="A8O-Jt-pNl"/>
+                <constraint firstItem="ZBS-7S-wIx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="PNw-Qx-4NY"/>
+                <constraint firstAttribute="bottom" secondItem="ZBS-7S-wIx" secondAttribute="bottom" constant="15" id="PeL-7F-7fD"/>
+                <constraint firstItem="ZBS-7S-wIx" firstAttribute="top" secondItem="7wy-yU-bqq" secondAttribute="bottom" constant="28" id="cnz-Dt-izi"/>
+                <constraint firstAttribute="trailing" secondItem="sh0-yq-ckQ" secondAttribute="trailing" constant="15" id="cwg-GR-s59"/>
+                <constraint firstItem="VtS-8E-wcw" firstAttribute="top" secondItem="sh0-yq-ckQ" secondAttribute="bottom" constant="109" id="dtv-TC-FKE"/>
+                <constraint firstItem="VtS-8E-wcw" firstAttribute="leading" secondItem="7wy-yU-bqq" secondAttribute="trailing" constant="18" id="ehP-aJ-uJ8"/>
+                <constraint firstAttribute="trailing" secondItem="ZBS-7S-wIx" secondAttribute="trailing" constant="20" id="kGN-UK-4Dj"/>
+                <constraint firstItem="7wy-yU-bqq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="kKo-qI-sB1"/>
+                <constraint firstItem="sh0-yq-ckQ" firstAttribute="leading" secondItem="7wy-yU-bqq" secondAttribute="trailing" constant="23" id="kN4-iV-etw"/>
+                <constraint firstAttribute="trailing" secondItem="VtS-8E-wcw" secondAttribute="trailing" constant="20" id="kf6-ns-YVf"/>
+                <constraint firstItem="VtS-8E-wcw" firstAttribute="top" secondItem="sh0-yq-ckQ" secondAttribute="bottom" constant="109" id="twL-5s-xKw"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

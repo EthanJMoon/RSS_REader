@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "MainViewController.h"
+
+@class MainViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,6 +19,8 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) MainViewController *mainViewController;
+@property (strong, nonatomic) UINavigationController *naviController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
